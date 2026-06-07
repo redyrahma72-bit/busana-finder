@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Toko Busana Terdekat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">👕 Busana Finder</div>
+
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#toko">Toko</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="beranda">
+
+        <div class="hero-content">
+
+            <h1>Pencarian Toko Busana Terdekat</h1>
+
+            <p>
+                Menampilkan Toko Busana Di Sekitar Anda
+            </p>
+
+            <button onclick="cariToko()">
+                Cari Toko Terdekat
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Konten -->
+    <div class="container" id="toko">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari nama toko..."
+            onkeyup="filterToko()"
+        >
+
+        <div id="lokasi"></div>
+
+        <h2>Daftar Toko Busana Berdasarkan Jarak Terdekat</h2>
+
+        <div id="hasil"></div>
+
+    </div>
+
+    <section id="tentang" class="container">
+
+    <h2>Tentang Aplikasi</h2>
+
+    <p>
+        Aplikasi Pencarian Toko Busana Terdekat merupakan sistem berbasis web
+        yang membantu pengguna menemukan toko busana di sekitar lokasi mereka.
+    </p>
+
+    <p>
+        Sistem memanfaatkan fitur GPS (Geolocation) untuk memperoleh lokasi
+        pengguna dan metode K-Nearest Neighbor (KNN) untuk menghitung jarak
+        setiap toko berdasarkan koordinat geografis.
+    </p>
+
+    <p>
+        Pengguna dapat mencari toko, melihat alamat, nomor telepon, jarak,
+        serta langsung membuka rute menuju toko melalui Google Maps.
+    </p>
+
+    <p>
+        Aplikasi ini masih dalam pengembangan jadi belum sempurna masih banyak kekurangan dari fiturnya
+        jadi untuk para pengguna saya ucapkan minta maaf.
+    </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Tugas Kecerdasan Buatan</h3>
+
+        <p>
+            Sistem Pencarian Toko Busana Terdekat
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
